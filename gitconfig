@@ -22,10 +22,10 @@
 [include]
   path = .gitconfig.local
 [commit]
-	template = /Users/mike/.gitmessage
+  template = /Users/jaime/.gitmessage
 [user]
-  name = Mike Coutermarsh
-  email = coutermarsh.mike@gmail.com
+  name = jaime
+  email = jaimejim@gmail.com
 [diff]
     tool = Kaleidoscope
 [difftool "Kaleidoscope"]
