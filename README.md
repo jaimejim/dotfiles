@@ -1,4 +1,3 @@
-![dotfiles](https://raw.githubusercontent.com/mscoutermarsh/dotfiles/master/autobot.jpg)
 
 dotfiles
 ===================
@@ -7,11 +6,13 @@ dotfiles
 
 ## New to Vim?
 + [Learning Vim in a Week](https://mikecoutermarsh.com/boston-vim-learning-vim-in-a-week/)
-+ [Upcase: The Art of Vim](https://upcase.com/vim) 
++ [Upcase: The Art of Vim](https://upcase.com/vim)
 
 If you're brand new to Vim, I recommend using [ThoughtBot's dotfiles](https://github.com/thoughtbot/dotfiles). They are better maintained than mine :).  
 
 ## Installation
+
+**This will delete your current dotfiles, back them up!**
 
 If you have trouble during installation, please open an issue or pull request. :star:
 

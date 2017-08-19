@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search vim-mode osx)
+plugins=(git history-substring-search vim-mode osx autojump)
 
 # User configuration
 
@@ -91,3 +91,4 @@ bindkey '\e[B' history-beginning-search-forward
 eval "$(rbenv init -)"
 export NVM_DIR="/Users/mike/.nvm"
 [ -s "$NVM_DIR/nvm2.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="/usr/local/sbin:$PATH"

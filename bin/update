@@ -1,0 +1,27 @@
+UR_DIR=$(pwd)
+
+# Update App Store apps
+sudo softwareupdate -i -a
+
+# Update Homebrew (Cask) & packages
+brew update
+brew outdated
+read -p "ok to upgrade? [enter]"
+brew upgrade
+brew cleanup -s
+brew doctor
+
+# Update npm & packages
+npm install npm -g
+npm update -g
+
+# Update Ruby & gems, non-sudo updates rbenv versions, sudo updates mac and sudo versions
+gem update --system
+gem update
+gem cleanup
+sudo gem update --system
+sudo gem update
+sudo gem cleanup
+
+# take them back
+cd $CUR_DIR
