@@ -7,8 +7,13 @@ alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
 alias l='ls'
 alias ll='ls -al'
+alias l.='ls -d .*'
 alias lh='ls -Alh'
 alias -g G='| grep'
 alias -g M='| less'
@@ -33,6 +38,8 @@ alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias ggs='gs'
 # open a pull request, requires Hub to be installed (hub.github.com)
 alias gpr='git pull-request'
+## this one saved by butt so many times ##
+#alias wget='wget -c'
 
 # Bundler
 alias b="bundle"
