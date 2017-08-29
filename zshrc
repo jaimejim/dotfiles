@@ -92,3 +92,4 @@ eval "$(rbenv init -)"
 export NVM_DIR="/Users/mike/.nvm"
 [ -s "$NVM_DIR/nvm2.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export PATH="/usr/local/sbin:$PATH"
+eval "$(rbenv init -)"

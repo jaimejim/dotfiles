@@ -41,6 +41,9 @@ alias gpr='git pull-request'
 ## this one saved by butt so many times ##
 #alias wget='wget -c'
 
+# Pull all files from underlying repos
+alias pa='~/.bin/git-pull-all'
+
 # Bundler
 alias b="bundle"
 alias bi="bundle install"
@@ -59,6 +62,16 @@ alias rc="NO_RENDERER=true bin/rails c"
 alias vimrc="vim ~/.vimrc"
 alias vimrcbundles="vim ~/.vimrc.bundles"
 alias zshrc="vim ~/.zshrc"
+
+# Todo lists
+alias todo="todotxt-machine"
+
+# Intellij Idea
+alias idea='open -a "`ls -dt /Applications/IntelliJ*|head -1`"'
+
+# Present random man page
+alias rmp='dir="/bin"; man $(ls $dir |sed -n "$(echo $(( $RANDOM % $(ls $dir |wc -l | awk "{ print $1; }" ) + 1 )) )p")'
+
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
