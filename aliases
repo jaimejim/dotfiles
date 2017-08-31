@@ -1,7 +1,6 @@
 # use neovim!
 # alias vim='nvim'
 
-
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
@@ -20,22 +19,11 @@ alias -g M='| less'
 alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
-# because typing is hard
-alias bim="vim"
 
-# fix for passing params to rake tasks
-alias rake='noglob rake'
-
-alias :w="echo this isn\'t vim 🌟"
-alias :q='exit'
-
-# git
-alias g='git'
-alias gs='git status -sb'
+# git status
+alias gs='git status'
 # copy the current branch name
 alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
-# because i make this typo a lot
-alias ggs='gs'
 # open a pull request, requires Hub to be installed (hub.github.com)
 alias gpr='git pull-request'
 ## this one saved by butt so many times ##
@@ -43,20 +31,6 @@ alias gpr='git pull-request'
 
 # Pull all files from underlying repos
 alias pa='~/.bin/git-pull-all'
-
-# Bundler
-alias b="bundle"
-alias bi="bundle install"
-alias be="bundle exec"
-# because i make this typo a lot
-alias kbundle="bundle"
-
-# Rubygems
-alias gi="gem install"
-
-# Rails
-alias rk="rake"
-alias rc="NO_RENDERER=true bin/rails c"
 
 # Config Files
 alias vimrc="vim ~/.vimrc"
@@ -71,7 +45,6 @@ alias idea='open -a "`ls -dt /Applications/IntelliJ*|head -1`"'
 
 # Present random man page
 alias rmp='dir="/bin"; man $(ls $dir |sed -n "$(echo $(( $RANDOM % $(ls $dir |wc -l | awk "{ print $1; }" ) + 1 )) )p")'
-
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
