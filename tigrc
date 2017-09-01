@@ -1,3 +1,22 @@
+# use of mouse
 set mouse = yes
+# enable grpahic characters 
 set line-graphics = utf-8
+# only refresh after returning from an external command
+set refresh-mode = after-command
 
+# Checkout of the selected commit
+bind generic O !git checkout %(commit)
+# Revert and check that there is no merge conflict  
+bind generic R !sh -c "git revert %(commit) || git mergetool"
+# Rebasing interactively previous commits
+bind generic r !git rebase -i %(commit)
+ 
+#bind status a !@git add -u
+bind status A !@git commit --amend --reset-author --no-edit
+bind generic w scroll-line-up
+bind generic s scroll-line-down
+#bind generic P !?git push origin HEAD
+bind generic U !?git up 
+bind main C !@git cherry-pick-and-merge %(commit)
+bind main u !@sh -c "open $(git url %(commit))"
