@@ -91,5 +91,5 @@ bindkey '\e[B' history-beginning-search-forward
 eval "$(rbenv init -)"
 export NVM_DIR="/Users/mike/.nvm"
 [ -s "$NVM_DIR/nvm2.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH:$HOME/Library/Python/2.7/bin"
 eval "$(rbenv init -)"

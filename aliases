@@ -1,6 +1,7 @@
 # use neovim!
 # alias vim='nvim'
-
+# Tunnels
+alias tunnels=". ~jaime/bin/tunnels"
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
@@ -19,13 +20,14 @@ alias -g M='| less'
 alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias h="history | cut -c 8-"
 
 # git status
 alias gs='git status'
 # copy the current branch name
 alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
 # open a pull request, requires Hub to be installed (hub.github.com)
-alias gpr='git pull-request'
+alias gpr='git request-pull'
 ## this one saved by butt so many times ##
 #alias wget='wget -c'
 
@@ -48,3 +50,7 @@ alias rmp='dir="/bin"; man $(ls $dir |sed -n "$(echo $(( $RANDOM % $(ls $dir |wc
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
+
+# Include all docker commands
+alias dstop='docker stop $(docker ps -a -q)'
+alias dremove='docker rm $(docker ps -a -q)'
