@@ -30,8 +30,9 @@ alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias gpr='git request-pull'
 ## this one saved by butt so many times ##
 #alias wget='wget -c'
-
-# Pull all files from underlying repos
+# open url of the current repository
+alias gh="git-open"
+# Pull all files from underlying repositories
 alias pa='~/.bin/git-pull-all'
 
 # Config Files
@@ -44,6 +45,9 @@ alias todo="todotxt-machine"
 
 # Intellij Idea
 alias idea='open -a "`ls -dt /Applications/IntelliJ*|head -1`"'
+
+# PDF to TEXT on folder
+alias pdf-all='find . -name \*.pdf -exec pdftotext "{}" \;'
 
 # Present random man page
 alias rmp='dir="/bin"; man $(ls $dir |sed -n "$(echo $(( $RANDOM % $(ls $dir |wc -l | awk "{ print $1; }" ) + 1 )) )p")'

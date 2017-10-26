@@ -25,7 +25,7 @@
 [commit]
   template = /Users/jaime/.gitmessage
 [user]
-  name = jaime
+	name = jaimejim
   email = jaimejim@gmail.com
 [diff]
     tool = Kaleidoscope
