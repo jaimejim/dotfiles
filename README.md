@@ -1,14 +1,6 @@
 
 dotfiles
 ===================
-![screenshot](https://github.com/mscoutermarsh/dotfiles/blob/master/screenshot.png)
-(Here's what my setup looks like. Vim/Tmux)
-
-## New to Vim?
-+ [Learning Vim in a Week](https://mikecoutermarsh.com/boston-vim-learning-vim-in-a-week/)
-+ [Upcase: The Art of Vim](https://upcase.com/vim)
-
-If you're brand new to Vim, I recommend using [ThoughtBot's dotfiles](https://github.com/thoughtbot/dotfiles). They are better maintained than mine :).  
 
 ## Installation
 
@@ -80,5 +72,3 @@ $ brew install reattach-to-user-namespace
 ---
 These are a heavily modified version of Thoughtbot's dotfiles. More detailed instructions are available here: http://github.com/thoughtbot/dotfiles.
 
-#### Contributing
-Did you have trouble installing this? Could I make the documentation better? Let me know [@mscccc](http://twitter.com/mscccc). Or please fork & create a pull request with your suggestions.
