@@ -22,6 +22,10 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 alias h="history | cut -c 8-"
 
+# Contiki Alias
+#export CNG_PATH= "~/code/contiki-ng"
+#alias contiker="docker run --privileged -v $CNG_PATH:/home/user/contiki-ng -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti simonduq/contiki-ng"
+
 # git status
 alias gs='git status'
 # copy the current branch name

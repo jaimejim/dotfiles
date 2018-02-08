@@ -4,6 +4,8 @@ set mouse = yes
 set line-graphics = utf-8
 # only refresh after returning from an external command
 set refresh-mode = after-command
+# set word wrap
+set wrap-lines = yes
 
 # Checkout of the selected commit
 bind generic O !git checkout %(commit)
